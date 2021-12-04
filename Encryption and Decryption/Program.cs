@@ -60,7 +60,7 @@ namespace Encryption_and_Decryption
 
 			try
 			{
-				string password = @"myKey123"; 
+				string password = @"myKey123"; // Your Key Here
 				UnicodeEncoding UE = new UnicodeEncoding();
 				byte[] key = UE.GetBytes(password);
 
@@ -95,7 +95,7 @@ namespace Encryption_and_Decryption
 		{
 
 			{
-				string password = @"myKey123"; 
+				string password = @"myKey123"; // Your Key Here
 
 				UnicodeEncoding UE = new UnicodeEncoding();
 				byte[] key = UE.GetBytes(password);
