@@ -130,14 +130,17 @@ namespace Encryption_and_Decryption
 			string SaltKey = "S@LT&KEY";
 			string VIKey = "@1B2c3D4e5F6g7H8";
 
+
 			Console.WriteLine(EncryptText(word, PasswordHash, SaltKey, VIKey));
 			Console.WriteLine(DecryptText(EncryptText(word, PasswordHash, SaltKey, VIKey), PasswordHash, SaltKey, VIKey));
+
 
 			if (File.Exists($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/1.zip"))
 			{
 				EncryptFile($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/1.zip", $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/Encrypt File.ttt");
 				DecryptFile($"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/Encrypt File.ttt", $"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}/12.zip");
 			}
+
 
 			Console.ReadKey();
 		}
